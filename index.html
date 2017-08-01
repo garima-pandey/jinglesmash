@@ -227,7 +227,7 @@
                      <div class="col-md-1">
                          
                      </div>
-                     <div class="col-md-10">
+                     <div class="col-md-10 top-song">
                        <div class="song_list">
                         <div class="row">
                         <div class="col-md-2">
@@ -319,7 +319,7 @@
                      <div class="col-md-1">
                          
                      </div>
-                     <div class="col-md-10">
+                     <div class="col-md-10  top-song2">
                        <div class="song_list">
                         <div class="row">
                         <div class="col-md-2">
@@ -465,7 +465,7 @@
                      <div class="col-md-1">
                          
                      </div>
-                     <div class="col-md-10">
+                     <div class="col-md-10 top-song">
                        <div class="song_list">
                         <div class="row">
                         <div class="col-md-2">
@@ -557,7 +557,7 @@
                      <div class="col-md-1">
                          
                      </div>
-                     <div class="col-md-10">
+                     <div class="col-md-10 top-song2">
                        <div class="song_list">
                         <div class="row">
                         <div class="col-md-2">
@@ -787,6 +787,80 @@
             })
         
     });
+    
+    </script> 
+    
+    <script>
+    $(window).scroll(function(){
+        var scroll_pos = $(window).scrollTop();
+        if(scroll_pos > 370){
+            $("body").addClass("scroll_active");
+        }
+        else{
+            $("body").removeClass("scroll_active");
+        }
+    });
+    </script>
+    
+    <script>
+     $(window).scroll(function(){
+        var window_scroll_pos = $(window).scrollTop();
+        var scroll_pos = $("#section_6").offset().top;
+        var scroll_y = window_scroll_pos-scroll_pos;
+        if(scroll_y > $(window).height() - scroll_pos) {
+            $("#section_6").addClass("active");
+        }
+        else {
+            $("#section_6").removeClass("active");
+        }
+    });
+    
+        </script>
+        
+        <script>
+     $(window).scroll(function(){
+        var window_scroll_pos = $(window).scrollTop();
+        var scroll_pos = $("#section_2").offset().top;
+        var scroll_y = window_scroll_pos-scroll_pos;
+        if(scroll_y > $(window).height() - scroll_pos) {
+            $("#section_2").addClass("active2");
+        }
+        else {
+            $("#section_2").removeClass("active2");
+        }
+    });
+    
+            
+            </script>
+            
+            <script>
+     $(window).scroll(function(){
+        var window_scroll_pos = $(window).scrollTop();
+        var scroll_pos = $("#section_4").offset().top;
+        var scroll_y = window_scroll_pos-scroll_pos;
+        if(scroll_y > $(window).height() - scroll_pos) {
+            $("#section_4").addClass("active3");
+        }
+        else {
+            $("#section_4").removeClass("active3");
+        }
+    });
+                
+                </script>
+  
+    <script>  
+     $(window).scroll(function(){
+        var window_scroll_pos = $(window).scrollTop();
+        var scroll_pos = $("#section_12").offset().top;
+        var scroll_y = window_scroll_pos-scroll_pos;
+        if(scroll_y > $(window).height() - scroll_pos) {
+            $("#section_12").addClass("active4");
+        }
+        else {
+            $("#section_12").removeClass("active4");
+        }
+    });
+    
 </script>
 
 </body>
