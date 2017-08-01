@@ -15,7 +15,13 @@ body{
     background-color: #000;
     opacity: 0.5;
     z-index: 40;
+    transition: 2s;
 
+}
+
+body.scroll_active #header {
+    background-color: deeppink;
+    z-index: 50;
 }
 
 #header h1{
@@ -189,6 +195,25 @@ body{
     color: #fff;
 }
 
+#section_2 .top-song{
+     transform: translate(-150%,0px);
+    transition: 1s;
+}
+
+#section_2.active2 .top-song{
+    transform: translate(0px,0px);
+    
+}
+
+#section_2 .top-song2{
+     transform: translate(350%,0px);
+    transition: 1s;
+}
+
+#section_2.active2 .top-song2{
+    transform: translate(0px,0px);
+    
+}
 
 
 #section_3 {
@@ -268,6 +293,26 @@ body{
     color: #fff;
 }
 
+#section_4 .top-song{
+     transform: translate(-150%,0px);
+    transition: 1s;
+}
+
+#section_4.active3 .top-song{
+    transform: translate(0px,0px);
+    
+}
+
+#section_4 .top-song2{
+     transform: translate(350%,0px);
+    transition: 1s;
+}
+
+#section_4.active3 .top-song2{
+    transform: translate(0px,0px);
+    
+}
+
 #section_5 h1{
     text-align: center;
     background-color: #fff;
@@ -290,6 +335,17 @@ body{
     background-color: #000;
     opacity: 0.8;
 }
+
+#section_6 .col-md-6{
+     transform: translate(-150%,0px);
+    transition: 1s;
+}
+
+#section_6.active .col-md-6{
+    transform: translate(0px,0px);
+    
+}
+
 
 #section_6 h5,h6{
     color: #fff;
@@ -412,6 +468,9 @@ body{
 #section_12 .col-md-10 div img{
     width: 100%;
     height: inherit;
+    opacity: 0;
+    z-index: -4;
+    transition: 10s;
    
 }
 
@@ -430,6 +489,13 @@ body{
         transform: translate(0px,10px) scale(1,1);
     }
 }
+
+#section_12.active4 .col-md-10 div img{
+    opacity: 1;
+    z-index: 80;
+   
+}
+
 
 /*#content{
 display: flex;
